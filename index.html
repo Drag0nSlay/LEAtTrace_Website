@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEAtTrace: Cryptocurrency Forensic Intelligence Suite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L21 6.5V12C21 17 17.5 20.7 12 22C6.5 20.7 3 17 3 12V6.5L12 2Z" stroke="#2fd9c4" stroke-width="1.4"/><path d="M8.5 12.2L11 14.7L15.7 9.8" stroke="#2fd9c4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <div class="brand-name">LEAtTrace</div>
+        <div class="brand-sub">CBI &amp; I4C PORTAL</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#access">Access</a>
+      <a href="https://leattrace.vercel.app/">Prototype ↗</a>
+    </nav>
+    <div class="status-pill"><span class="dot"></span> PROTOTYPE — LIVE</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero" style="border-top:none;">
+    <div>
+      <div class="case-tag">◇ CYBER CRIME CELL — FORENSIC TOOLING</div>
+      <h1>Follow the wallet.<br>Find the <em>network</em>.</h1>
+      <p class="lede">LEAtTrace gives investigators a single workspace to profile wallets, trace fund flow across chains, and turn raw transaction data into an evidence‑ready case — with AI‑assisted pattern detection doing the first pass.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://leattrace.vercel.app/" target="_blank" rel="noopener">Open Prototype ↗</a>
+        <a class="btn btn-ghost" href="#access">Production Access <span class="tag-soon">SOON</span></a>
+      </div>
+      <div class="hash-ticker">
+        <span class="lbl">recent traces —</span>
+        <div class="hash-track">
+          <span><b>0xFEEEEE44…0a7ffC</b> → 6 counterparties</span>
+          <span><b>bc1qxy2kg…0wlh</b> → 2 live UTXOs</span>
+          <span><b>0x71C7656E…f0F5</b> → flagged mixer path</span>
+          <span><b>0xFEEEEE44…0a7ffC</b> → 6 counterparties</span>
+          <span><b>bc1qxy2kg…0wlh</b> → 2 live UTXOs</span>
+          <span><b>0x71C7656E…f0F5</b> → flagged mixer path</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="graph-panel">
+      <div class="gp-head"><span>FUND FLOW TRACE — LIVE</span><span class="live">● tracking</span></div>
+      <svg class="graph-svg" viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
+        <path class="edge-flow" d="M210 160 C160 130, 120 110, 80 70"/>
+        <path class="edge-flow" d="M210 160 C160 170, 110 190, 60 210"/>
+        <path class="edge" d="M210 160 C260 120, 300 100, 340 60"/>
+        <path class="edge-flow" d="M210 160 C270 175, 310 195, 360 220"/>
+        <path class="edge" d="M210 160 C250 150, 290 145, 330 150"/>
+        <path class="edge" d="M80 70 C60 90, 50 110, 55 130"/>
+
+        <circle class="pulse" cx="210" cy="160" r="18"/>
+        <circle class="node node-target" cx="210" cy="160" r="17"/>
+        <text class="node-label" x="210" y="164" text-anchor="middle">TARGET</text>
+
+        <circle class="node" cx="80" cy="70" r="11"/>
+        <circle class="node" cx="60" cy="210" r="10"/>
+        <circle class="node node-flag" cx="340" cy="60" r="11"/>
+        <text class="node-label" x="340" y="42" text-anchor="middle" fill="#f2495c">FLAGGED</text>
+        <circle class="node" cx="360" cy="220" r="10"/>
+        <circle class="node" cx="330" cy="150" r="9"/>
+        <circle class="node" cx="55" cy="130" r="8"/>
+      </svg>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="capabilities">
+    <div class="section-head">
+      <div>
+        <div class="index" style="margin-bottom:10px;">EXHIBIT LOG — CAPABILITIES</div>
+        <h2>What the suite does, end to end</h2>
+      </div>
+      <p>From a single address to a mapped network of counterparties, built for the pace of an active investigation.</p>
+    </div>
+
+    <div class="exhibit-list">
+      <div class="exhibit">
+        <div class="exhibit-id">EX‑01</div>
+        <div class="exhibit-name">Wallet profiling</div>
+        <div class="exhibit-desc">Confirmed balance, live UTXOs, first/last activity, and full transaction history for any BTC or EVM‑compatible address, pulled straight from chain data.</div>
+      </div>
+      <div class="exhibit">
+        <div class="exhibit-id">EX‑02</div>
+        <div class="exhibit-name">Fund flow visualization</div>
+        <div class="exhibit-desc">Interactive graphs trace inflows and outflows across hops, surfacing counterparty clusters and the shortest path between two wallets.</div>
+      </div>
+      <div class="exhibit">
+        <div class="exhibit-id">EX‑03</div>
+        <div class="exhibit-name">AI forensic intelligence</div>
+        <div class="exhibit-desc">Pattern models flag mixing behavior, layering, and structuring — narrowing thousands of transactions down to the ones worth a closer look.</div>
+      </div>
+      <div class="exhibit">
+        <div class="exhibit-id">EX‑04</div>
+        <div class="exhibit-name">Case management</div>
+        <div class="exhibit-desc">Attach evidence, tag entities, and keep a running record inside one workspace — built to hold up as part of a case file.</div>
+      </div>
+      <div class="exhibit">
+        <div class="exhibit-id">EX‑05</div>
+        <div class="exhibit-name">Watchlists &amp; alerts</div>
+        <div class="exhibit-desc">Add addresses to a standing watchlist and get notified the moment a monitored wallet moves.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="access">
+    <div class="section-head">
+      <div>
+        <div class="index" style="margin-bottom:10px;">ACCESS</div>
+        <h2>Two ways in, right now</h2>
+      </div>
+      <p>The prototype is open to explore today. Production is being hardened for operational rollout.</p>
+    </div>
+
+    <div class="access-grid">
+      <div class="access-card live">
+        <span class="access-badge b-live">● LIVE — OPEN NOW</span>
+        <h3>Prototype build</h3>
+        <p>The full working dashboard — wallet lookup, live balances, graph tracing, and case tools — deployed for demo and pilot review.</p>
+        <div class="access-meta"><span>Env: <b>staging</b></span><span>Chains: <b>BTC · EVM</b></span></div>
+        <a class="btn btn-primary" href="https://leattrace.vercel.app/" target="_blank" rel="noopener">Open Prototype ↗</a>
+      </div>
+
+      <div class="access-card">
+        <span class="access-badge b-soon">◐ IN DEVELOPMENT</span>
+        <h3>Production release</h3>
+        <p>Hardened, audited build for operational deployment inside cybercrime cells — stronger data guarantees and multi‑agency access controls.</p>
+        <div class="progress-line"><i></i></div>
+        <div class="access-meta"><span>Status: <b>coming soon</b></span></div>
+        <span class="btn btn-disabled">Not yet available</span>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <footer>
+    <div class="f-left">LEAtTrace: Cryptocurrency Transaction Tracing &amp; AML Investigation Suite</div>
+    <div class="f-right">
+      <span>BUILD: PROTOTYPE</span>
+      <span>REGION: IN</span>
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
